@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-6"><h1>Willkommen bei UpMoon</h1>
+            <p>Diese Applikation erlaubt es dir deine Schlafdaten mit den Phasen des Mondes abzugleichen.<br>
+                Logge dich mit deinen Zugangsdaten von Up ein, um zu starten.</p>
+            <br>
+            <button id="myBtn" type="button" class="btn btn-primary">Starte UpMoon</button>
+        </div>
+        <div class="col-md-4">
+            <img src="{{ asset('Logo-UpMoon.png') }}" alt="UpMoon Logo" />
+    </div>
+        {% block javascripts %}
+   
+        {% endblock %}
+
+        {% endblock %}
